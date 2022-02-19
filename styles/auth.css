@@ -1,0 +1,93 @@
+.form-wrap {
+  width: 32rem;
+  margin: 3rem auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.form-wrap .tabs {
+  overflow: hidden;
+}
+.form-wrap .tabs h3 {
+  float: left;
+  width: 50%;
+}
+.form-wrap .tabs h3 a {
+  padding: 0.5rem 0;
+  text-align: center;
+  font-weight: 400;
+  display: block;
+  background-color: #fff;
+  color: var(--black);
+}
+.form-wrap .tabs h3 a.active {
+  background-color: var(--gray-1);
+}
+.form-wrap .tabs-content {
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+.form-wrap .tabs-content div[id$=tab-content] {
+  display: none;
+  opacity: 0;
+}
+.form-wrap .tabs-content div.active {
+  transition: all 0.3s;
+  display: block;
+  opacity: 1;
+}
+.form-wrap form .input {
+  padding: 0.8rem 0 10px 0.8rem;
+  border: 1px solid var(--gray-3);
+  outline: 0;
+  display: inline-block;
+  margin: 0 0 0.8rem 0;
+  padding-right: 2rem;
+  width: 100%;
+}
+.form-wrap form .btn {
+  width: 100%;
+}
+.form-wrap form .checkbox {
+  visibility: hidden;
+  padding: 20px;
+  margin: 0.5rem 0 1.5rem;
+}
+.form-wrap form .checkbox:checked + label:after {
+  opacity: 1;
+}
+.form-wrap form label[for] {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.form-wrap form label[for]:before {
+  content: "";
+  position: absolute;
+  border: 1px solid #cfcfcf;
+  width: 17px;
+  height: 17px;
+  top: 0px;
+  left: -14px;
+}
+.form-wrap form label[for]:after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background-color: transparent;
+  top: 4px;
+  left: -10px;
+  border: 3px solid var(--primary);
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+.form-wrap .help-text {
+  margin-top: 0.6rem;
+}
+.form-wrap .help-text p {
+  text-align: center;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=auth.css.map */
