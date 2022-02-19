@@ -1,0 +1,193 @@
+:root {
+  --primary: #f25c39;
+  --primary-light: #f0826a;
+  --primary-dark: #f1350b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 2rem auto;
+}
+
+.header {
+  max-height: 100vh;
+}
+.header .cta {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: center;
+  width: 100%;
+  height: 40rem;
+}
+.header .cta-img {
+  width: 80rem;
+  height: 40rem;
+}
+.header .cta-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.header .cta-text {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 2rem 2rem 2rem 0;
+  line-height: normal;
+}
+.header .cta-text span {
+  color: var(--primary);
+}
+.header .cta-text p {
+  font-size: 1.2rem;
+}
+.header .cta-text p img {
+  width: 5rem;
+  margin-bottom: -1rem;
+}
+.header .cta-buttons {
+  margin-top: 3rem;
+}
+.header .cta-buttons button {
+  font-size: 1.5rem;
+}
+
+.nav__search {
+  position: relative;
+}
+.nav__search input {
+  width: 300px;
+  border: none;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--gray-3);
+  border-radius: 0.4rem;
+}
+.nav__search input:focus {
+  border: 1px solid transparent;
+  outline: 2px solid var(--primary);
+}
+.nav__search button {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  font-size: 1.2rem;
+  right: 1rem;
+  top: 0.5rem;
+}
+
+.categories .category {
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 20rem;
+  height: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.categories .category span {
+  color: var(--white);
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.categories .category img {
+  z-index: 5;
+  transition: all 0.5s;
+  max-width: 100%;
+}
+.categories .category:hover span {
+  position: absolute;
+  z-index: 10;
+  opacity: 1;
+}
+.categories .category:hover img {
+  filter: brightness(0.6);
+  transform: scale(1.5);
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer {
+  font-size: 16px;
+  background: #000;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+footer .col {
+  flex: 1;
+}
+footer .col-title {
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+footer .col-list a {
+  color: var(--gray-1);
+  text-decoration: none;
+  line-height: 1.4;
+  font-weight: 400;
+  transition: all 0.2s;
+}
+footer .col-list a:hover, footer .col-list a:focus {
+  color: var(--primary);
+}
+footer .subscribe-form,
+footer .social-media {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+footer .subscribe-input {
+  width: auto;
+  flex: 1;
+  background: transparent;
+  border: 1px solid var(--gray-3);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  display: inline-block;
+  color: var(--white);
+}
+footer .subscribe-input:focus {
+  border: 1px solid transparent;
+  outline: 2px solid var(--primary);
+}
+footer .form-title,
+footer .social-col-title {
+  font-size: 1rem;
+  color: var(--white);
+}
+footer .social-media {
+  flex-direction: column;
+}
+footer .social-media-list {
+  margin: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/*# sourceMappingURL=index.css.map */
