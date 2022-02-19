@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Max Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://maxui.netlify.app/components/max.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/product.css" />
+    <script src="https://kit.fontawesome.com/8269a6457c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="/">
+          <div class="nav__logo">
+            <img src="./images/logo.png" alt="logo" width="200" />
+          </div>
+        </a>
+        <div class="nav__search">
+          <input type="text" placeholder="Search" />
+          <button>
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="nav__links">
+          <a href="./product.html" class="nav__link active">
+            <i class="fa-solid fa-crown"></i>
+            <span class="nav__link--text">Products</span>
+          </a>
+          <a href="./wishlist.html" class="nav__link">
+            <i class="fa-solid fa-heart"></i>
+            <span class="nav__link--text">Wishlist</span>
+          </a>
+          <a href="./cart.html" class="nav__link">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="nav__link--text">Cart</span>
+          </a>
+          <a href="./auth.html" class="nav__link">
+            <button class="btn btn--primary">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+              Auth
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="product-page container">
+      <div class="product-page__filters">
+        <h2>Filters</h2>
+
+        <div class="filter-category select">
+          <select>
+            <option disabled selected>Choose a Category</option>
+            <option value="2">Men's</option>
+            <option value="2">Men's</option>
+            <option value="3">Womens</option>
+            <option value="3">Womens</option>
+          </select>
+        </div>
+        <div class="filter-price select">
+          <select>
+            <option disabled selected>Choose a Price Range</option>
+            <option value="2">&lt; 500</option>
+            <option value="2">&gt; 500</option>
+            <option value="3">&lt; 700</option>
+            <option value="3">&gt; 700</option>
+          </select>
+        </div>
+        <div class="filter-price-sort select">
+          <select>
+            <option disabled selected>Sort by Price</option>
+            <option value="1">High to Low</option>
+            <option value="2">Low to High</option>
+          </select>
+        </div>
+        <div class="filter-rating select">
+          <select>
+            <option disabled selected>Choose a Rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="4">5</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-page__cards grid col-autofit">
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card vertical">
+          <div class="card__image">
+            <span class="badge badge-warning">Sale</span>
+            <a href="#"
+              ><img
+                class="img-responsive"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+            /></a>
+          </div>
+          <div class="card__content">
+            <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia ipsum
+              voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt. Facere
+              laboriosam accusantium corrupti, repellendus ratione inventore architecto expedita
+              aliquam!
+            </p>
+            <div class="card__bottom">
+              <div class="card__price">
+                <span>Rs. 1000</span>
+              </div>
+              <div class="card__buttons">
+                <button class="btn btn--sm btn--primary">
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      <span class="col">
+        <h3 class="col-title">Info</h3>
+        <nav class="col-list">
+          <ul>
+            <li><a href="#">Formats</a></li>
+            <li><a href="#">Compression</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="col">
+        <h3 class="col-title">Resources</h3>
+        <nav class="col-list">
+          <ul>
+            <li><a href="#">Developer API</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="col">
+        <h3 class="col-title">Max Store</h3>
+        <nav class="col-list">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="col">
+        <div class="subscribe-form-holder">
+          <h3 class="form-title">Subscribe to our email newsletter</h3>
+          <form action="#" onsubmit="return false" class="subscribe-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="email subscribe-input"
+              autocomplete="off"
+              placeholder="Your email"
+            />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="social-media">
+          <h3 class="social-col-title">Follow us</h3>
+          <ul class="social-media-list">
+            <li>
+              <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </span>
+    </footer>
+  </body>
+</html>
