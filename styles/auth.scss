@@ -5,9 +5,9 @@
 
   .tabs {
     overflow: hidden;
+    display: flex;
 
     h3 {
-      float: left;
       width: 50%;
 
       a {
@@ -27,18 +27,13 @@
 
   .tabs-content {
     padding: 1.5rem;
-    transition: all 0.3s;
 
     div[id$="tab-content"] {
       display: none;
-      opacity: 0;
     }
 
     div.active {
-      transition: all 0.3s;
-
       display: block;
-      opacity: 1;
     }
   }
 
