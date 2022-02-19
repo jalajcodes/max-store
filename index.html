@@ -11,20 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="http://localhost:5501/components/max.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jalajcodes/max-ui@dev/components/max.min.css"
-    />
+    <link rel="stylesheet" href="https://maxui.netlify.app/components/max.css" />
     <link rel="stylesheet" href="./styles/index.css" />
     <script src="https://kit.fontawesome.com/8269a6457c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
-        <div class="nav__logo">
-          <img src="./images/logo.png" alt="logo" width="200" />
-        </div>
+        <a href="/">
+          <div class="nav__logo">
+            <img src="./images/logo.png" alt="logo" width="200" />
+          </div>
+        </a>
         <div class="nav__search">
           <input type="text" placeholder="Search" />
           <button>
@@ -32,19 +30,19 @@
           </button>
         </div>
         <div class="nav__links">
-          <a href="#" class="nav__link">
-            <i class="fa-solid fa-house"></i>
-            <span class="nav__link--text">Home</span>
+          <a href="./product.html" class="nav__link">
+            <i class="fa-solid fa-crown"></i>
+            <span class="nav__link--text">Products</span>
           </a>
-          <a href="#" class="nav__link">
+          <a href="./wishlist.html" class="nav__link">
             <i class="fa-solid fa-heart"></i>
             <span class="nav__link--text">Wishlist</span>
           </a>
-          <a href="#" class="nav__link">
+          <a href="./cart.html" class="nav__link">
             <i class="fa-solid fa-bag-shopping"></i>
             <span class="nav__link--text">Cart</span>
           </a>
-          <a href="#" class="nav__link">
+          <a href="./auth.html" class="nav__link">
             <button class="btn btn--primary">
               <i class="fa-solid fa-arrow-right-to-bracket"></i>
               Auth
