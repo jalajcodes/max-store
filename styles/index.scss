@@ -18,7 +18,7 @@ h2 {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -74,6 +74,12 @@ h2 {
 }
 
 .nav {
+  &__logo {
+    img {
+      width: 12rem;
+    }
+  }
+
   &__search {
     position: relative;
     margin-right: 1rem;
@@ -98,7 +104,6 @@ h2 {
       padding: 0;
       position: absolute;
       font-size: 1.2rem;
-      // top: 50%;
       right: 1rem;
       top: 0.5rem;
     }
