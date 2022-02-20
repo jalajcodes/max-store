@@ -3,6 +3,11 @@
   display: flex;
   gap: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .product-page {
+    flex-direction: column;
+  }
+}
 .product-page__filters {
   flex: 0 0 20%;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -11,6 +16,14 @@
   position: sticky;
   top: 1rem;
   padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .product-page__filters {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .product-page__filters h2 {
   margin: 0 0 1rem 0;

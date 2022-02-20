@@ -1,7 +1,11 @@
 .cart-page {
   display: flex;
-  flex-direction: ROW;
   gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .cart-page {
+    flex-direction: column;
+  }
 }
 .cart-page__price-info {
   flex: 0 0 30%;

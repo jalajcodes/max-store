@@ -18,18 +18,16 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <a href="/">
-          <div class="nav__logo">
-            <img src="./images/logo.png" alt="logo" width="200" />
-          </div>
-        </a>
-        <div class="nav__search">
-          <input type="text" placeholder="Search" />
-          <button>
-            <i class="fas fa-search"></i>
-          </button>
+        <div class="nav__logo">
+          <img src="./images/logo.png" alt="logo" width="200" />
         </div>
         <div class="nav__links">
+          <div class="nav__search">
+            <input type="text" placeholder="Search" />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
           <a href="./product.html" class="nav__link">
             <i class="fa-solid fa-crown"></i>
             <span class="nav__link--text">Products</span>
@@ -48,6 +46,9 @@
               Auth
             </button>
           </a>
+        </div>
+        <div class="nav__menu-icon">
+          <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
 
@@ -71,7 +72,7 @@
 
     <section class="categories container" id="categories">
       <h2>Categories</h2>
-      <div class="grid col-4">
+      <div class="categories__container grid col-autofit">
         <div class="category">
           <img src="https://picsum.photos/500/?random=1" alt="" />
           <span>Shirts</span>
@@ -94,7 +95,7 @@
     <section class="products container">
       <h2>Products</h2>
 
-      <div class="grid col-4">
+      <div class="grid col-autofit">
         <div class="card vertical">
           <div class="card__image">
             <span class="badge badge-warning">Sale</span>
@@ -373,5 +374,7 @@
         </div>
       </span>
     </footer>
+
+    <script src="./js/nav.js"></script>
   </body>
 </html>

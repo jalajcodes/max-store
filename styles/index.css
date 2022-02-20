@@ -20,6 +20,7 @@ h2 {
 .container {
   max-width: 1280px;
   margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .header {
@@ -35,6 +36,11 @@ h2 {
 .header .cta-img {
   width: 80rem;
   height: 40rem;
+}
+@media screen and (max-width: 768px) {
+  .header .cta-img {
+    display: none;
+  }
 }
 .header .cta-img img {
   max-width: 100%;
@@ -65,6 +71,12 @@ h2 {
 
 .nav__search {
   position: relative;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .nav__search {
+    margin-bottom: 1rem;
+  }
 }
 .nav__search input {
   width: 300px;
@@ -90,6 +102,11 @@ h2 {
   color: var(--primary);
 }
 
+@media screen and (max-width: 768px) {
+  .categories__container {
+    margin-top: 2rem;
+  }
+}
 .categories .category {
   cursor: pointer;
   position: relative;
@@ -99,6 +116,13 @@ h2 {
   height: 15rem;
   border-radius: 0.5rem;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .categories .category {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
 }
 .categories .category span {
   color: var(--white);
@@ -122,10 +146,6 @@ h2 {
   transform: scale(1.5);
 }
 
-.col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 footer {
   font-size: 16px;
   background: #000;
@@ -134,6 +154,11 @@ footer {
   align-items: start;
   justify-content: center;
   gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
 }
 footer ul {
   padding: 0;
