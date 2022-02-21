@@ -23,13 +23,13 @@
             <img src="./images/logo.png" alt="logo" width="200" />
           </div>
         </a>
-        <div class="nav__search">
-          <input type="text" placeholder="Search" />
-          <button>
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
         <div class="nav__links">
+          <div class="nav__search">
+            <input type="text" placeholder="Search" />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
           <a href="./product.html" class="nav__link">
             <i class="fa-solid fa-crown"></i>
             <span class="nav__link--text">Products</span>
@@ -49,12 +49,15 @@
             </button>
           </a>
         </div>
+        <div class="nav__menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
     </header>
 
     <main class="wishlist-page container">
       <h2>Wishlist (9)</h2>
-      <div class="cart-page__cards grid col-3">
+      <div class="cart-page__cards grid col-autofit">
         <div class="card vertical">
           <div class="card__image">
             <span class="badge badge-warning">Sale</span>
@@ -393,5 +396,6 @@
         </div>
       </span>
     </footer>
+    <script src="./js/nav.js"></script>
   </body>
 </html>
