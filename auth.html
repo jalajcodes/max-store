@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth | Max Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://maxui.netlify.app/components/max.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/auth.css" />
+    <script src="https://kit.fontawesome.com/8269a6457c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img src="./images/logo.png" alt="logo" width="200" />
+        </div>
+        <div class="nav__links">
+          <div class="nav__search">
+            <input type="text" placeholder="Search" />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <a href="./product.html" class="nav__link">
+            <i class="fa-solid fa-crown"></i>
+            <span class="nav__link--text">Products</span>
+          </a>
+          <a href="./wishlist.html" class="nav__link">
+            <i class="fa-solid fa-heart"></i>
+            <span class="nav__link--text">Wishlist</span>
+          </a>
+          <a href="./cart.html" class="nav__link">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="nav__link--text">Cart</span>
+          </a>
+          <a href="#" class="nav__link">
+            <button class="btn btn--primary">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              Logout
+            </button>
+          </a>
+        </div>
+        <div class="nav__menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="form-wrap">
+      <div class="tabs">
+        <h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
+        <h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+      </div>
+
+      <div class="tabs-content">
+        <div id="signup-tab-content" class="active">
+          <form class="signup-form" action="" method="post">
+            <div class="input-container">
+              <input
+                type="email"
+                class="input"
+                id="user_email"
+                autocomplete="off"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                class="input"
+                id="user_name"
+                autocomplete="off"
+                placeholder="Username"
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="password"
+                class="input"
+                id="user_pass_signup"
+                autocomplete="off"
+                placeholder="Password"
+              />
+            </div>
+            <input type="submit" class="btn btn--primary" value="Sign Up" />
+          </form>
+          <!--.login-form-->
+          <div class="help-text">
+            <p>By signing up, you agree to our</p>
+            <p><a href="#">Terms of service</a></p>
+          </div>
+          <!--.help-text-->
+        </div>
+        <!--.signup-tab-content-->
+
+        <div id="login-tab-content">
+          <form class="login-form" action="" method="post">
+            <div class="input-container">
+              <input
+                type="text"
+                class="input"
+                id="user_login"
+                autocomplete="off"
+                placeholder="Email or Username"
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="password"
+                class="input"
+                id="user_pass_login"
+                autocomplete="off"
+                placeholder="Password"
+              />
+            </div>
+            <input type="checkbox" class="checkbox" id="remember_me" />
+            <label for="remember_me">Remember me</label>
+
+            <input type="submit" class="btn btn--primary" value="Login" />
+          </form>
+          <!--.login-form-->
+          <div class="help-text">
+            <p><a href="#">Forget your password?</a></p>
+          </div>
+          <!--.help-text-->
+        </div>
+        <!--.login-tab-content-->
+      </div>
+      <!--.tabs-content-->
+    </div>
+    <!--.form-wrap-->
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".tabs h3 a");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function (event) {
+            event.preventDefault();
+            tabs.forEach((el) => el.classList.remove("active"));
+            const activeTab = event.target;
+            activeTab.classList.add("active");
+
+            const tab_content = event.target.getAttribute("href");
+            const toShow = document.querySelector(tab_content);
+            const toHide = document.querySelectorAll('div[id$="tab-content"]');
+            toHide.forEach((el) => el.classList.remove("active"));
+            toShow.classList.add("active");
+          });
+        });
+      });
+    </script>
+
+    <footer class="footer" id="footer">
+      <span class="col">
+        <h3 class="col-title">Info</h3>
+        <nav class="col-list">
+          <ul>
+            <li><a href="#">Formats</a></li>
+            <li><a href="#">Compression</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="col">
+        <h3 class="col-title">Resources</h3>
+        <nav class="col-list">
+          <ul>
+            <li><a href="#">Developer API</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="col">
+        <h3 class="col-title">Max Store</h3>
+        <nav class="col-list">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </nav>
+      </span>
+
+      <span class="col">
+        <div class="subscribe-form-holder">
+          <h3 class="form-title">Subscribe to our email newsletter</h3>
+          <form action="#" onsubmit="return false" class="subscribe-form">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="email subscribe-input"
+              autocomplete="off"
+              placeholder="Your email"
+            />
+            <button type="submit" class="btn btn--primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="social-media">
+          <h3 class="social-col-title">Follow me</h3>
+          <ul class="social-media-list">
+            <li>
+              <a href="https://twitter.com/jalajcodes" class="twitter"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/jalajcodes" class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/jalajcodes" class="github">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </span>
+    </footer>
+
+    <script src="./js/nav.js"></script>
+  </body>
+</html>
