@@ -105,11 +105,6 @@ h2 {
   color: var(--primary);
 }
 
-@media screen and (max-width: 768px) {
-  .categories__container {
-    margin-top: 2rem;
-  }
-}
 .categories .category {
   cursor: pointer;
   position: relative;
@@ -122,8 +117,8 @@ h2 {
 }
 @media screen and (max-width: 768px) {
   .categories .category {
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
     margin-bottom: 2rem;
   }
 }
